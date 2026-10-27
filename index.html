@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Change the title</title>
+</head>
+<body>
+ <input id="new-tittle-value" type="text" placeholder="enter new title"><button type="submit" onclick=changeThetitle()>change</button>
+<script>
+console.log("js added ")
+let value;
+    let inputfeild = document.getElementById("new-tittle-value")
+
+function changeThetitle(){
+    let value = inputfeild.value
+    document.title = value;
+    console.log('function worked ')
+}
+
+</script>
+</body>
+</html>
